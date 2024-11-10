@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Teori</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            transition: all 0.5s;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .content-section {
+            margin: 20px 0;
+        }
+        p {
+            max-width: 600px; 
+            line-height: 1.6;
+        }
+       
+        .messy-mode {
+            font-family: 'Comic Sans MS', cursive;
+            background-color: #ff00ff;
+            color: #00ff00;
+        }
+        .toggle-button {
+            margin: 20px;
+            padding: 10px;
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+        .toggle-button:hover {
+            background-color: #ffc107;
+        }
+        .hidden {
+            display: none;
+        }
+        .footer {
+            display: none;
+            background-color: #333;
+            color: white;
+            text-align: left;
+            padding: 15px;
+            padding-left: 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .footer p {
+            margin: 10px 0;
+        }
+        .footer a {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>LAPORAN TEORI</h1>
+    <h2>Izaaz Muhammad Razan | 202331182</h2>
+
+    <div class="content-section">
+        <h3 onclick="toggleContent('section1')">1. Mengapa menggunakan CSS dan JavaScript dalam pemrograman web?</h3>
+        <p id="section1">Penggunaan CSS dan JavaScript dalam pemrograman web sangat penting untuk menciptakan situs yang menarik, interaktif, dan responsif. CSS digunakan untuk mengatur tampilan visual, memastikan desain yang estetis dan responsif, serta memisahkan konten dari presentasi agar lebih mudah dikelola. JavaScript menambah interaktivitas dan memungkinkan manipulasi elemen halaman tanpa perlu memuat ulang. Dengan framework seperti React atau Vue, JavaScript memungkinkan pembuatan aplikasi web yang kompleks.<br><br>Menggabungkan CSS dan JavaScript memberikan pengalaman pengguna yang lebih baik dengan antarmuka yang intuitif dan fungsionalitas canggih yang memenuhi kebutuhan pengguna.</p>
+    </div>
+
+    <div class="content-section">
+        <h3 onclick="toggleContent('section2')">2. Bagaimana CSS dan JavaScript dapat diintegrasikan dalam pemrograman web?</h3>
+        <p id="section2">CSS dan JavaScript dapat diintegrasikan dalam pemrograman web dengan menggabungkan gaya visual dan interaktivitas pada elemen web. Penghubungan dilakukan melalui tag <code>&lt;link&gt;</code> untuk CSS dan <code>&lt;script&gt;</code> untuk JavaScript di HTML. CSS mengatur tampilan, sedangkan JavaScript menambah interaksi. JavaScript juga bisa memodifikasi gaya CSS secara langsung dengan manipulasi DOM, memungkinkan tampilan dinamis sesuai interaksi pengguna.</p>
+    </div>
+
+    <div class="content-section">
+        <h3 onclick="toggleContent('section3')">3. Keuntungan menggunakan JavaScript dan CSS</h3>
+        <p id="section3">Menggunakan JavaScript dan CSS dalam pengembangan web memberikan banyak keuntungan. JavaScript memungkinkan situs menjadi interaktif dan responsif, memungkinkan fitur dinamis seperti formulir, animasi, dan elemen yang bereaksi terhadap input pengguna tanpa perlu memuat ulang halaman. Framework seperti React dan Vue mempermudah pembuatan aplikasi web kompleks.<br><br>CSS mendukung pengaturan tampilan dan tata letak, sehingga situs tampak menarik dan mudah digunakan. Dengan CSS, desain bisa dibuat responsif dan mudah dikelola karena tampilan terpisah dari struktur HTML. Kombinasi JavaScript dan CSS menghasilkan situs yang fungsional dan menarik, meningkatkan keseluruhan pengalaman pengguna.</p>
+    </div>
+
+    <div class="content-section">
+        <h3 onclick="toggleContent('section4')">4. Keuntungan menggunakan Bootstrap</h3>
+        <p id="section4">Bootstrap adalah framework CSS populer yang menawarkan banyak keuntungan dalam pengembangan web. Dengan desain responsif dan pendekatan mobile-first, Bootstrap memungkinkan situs web beradaptasi dengan berbagai ukuran layar, mulai dari desktop hingga smartphone. Pendekatan mobile-first memastikan tampilan optimal pada perangkat kecil terlebih dahulu, yang sangat relevan di era perangkat mobile.<br><br>Kemudahan penggunaannya juga menjadi kelebihan, karena Bootstrap memiliki dokumentasi lengkap dan komunitas besar, sehingga mudah dipelajari oleh pemula. Framework ini menyediakan berbagai komponen UI siap pakai, seperti tombol dan formulir, yang mempercepat proses pengembangan.<br><br>Bootstrap juga mudah dikustomisasi oleh pengguna agar dapat menyesuaikan tampilan melalui CSS atau menggunakan tema yang ada. Sistem grid fleksibelnya memudahkan pembuatan tata letak kompleks. Dengan komunitas besar dan pembaruan rutin, Bootstrap tetap relevan, aman, dan dilengkapi dengan fitur terbaru untuk pengembangan web yang efisien dan fungsional.</p>
+    </div>
+
+    <div class="content-section">
+        <h3 onclick="toggleContent('section5')">5. Contoh penggunaan Bootstrap</h3>
+        <p id="section5">Salah satu komponen yang sering digunakan dalam Bootstrap adalah tombol (button). Tombol Bootstrap hadir dalam berbagai gaya dan ukuran yang dapat langsung diterapkan dengan menambahkan kelas tertentu pada elemen <code>&lt;button&gt;</code>. Misalnya, kelas <code>btn-primary</code> memberikan warna biru untuk menunjukkan aksi utama, sementara kelas <code>btn-success</code> menandakan aksi berhasil atau positif.<br><br>Dengan menggunakan kelas seperti <code>btn</code>, <code>btn-primary</code>, <code>btn-success</code>, dll., pengembang dapat menghemat waktu dalam mendesain tampilan tombol. Setiap kelas dalam Bootstrap dirancang untuk menghasilkan tampilan yang seragam dan menarik, sehingga cocok digunakan di berbagai bagian antarmuka web.</p>
+    </div>
+
+    <button class="toggle-button" onclick="toggleMode()">Ganti Mode Tampilan</button>
+
+    <button class="toggle-button" onclick="toggleBibliography()">Daftar Pustaka</button>
+    <div id="bibliography" class="footer">
+        <p><a href="https://www.semanticscholar.org/paper/Pengembangan-Media-Pembelajaran-Web-berbasis-Html-Muzakkir/59804c874809107839e271b1014212d2d13e44a4" target="_blank">Muzakkir. "Pengembangan Media Pembelajaran Web berbasis Html." Semantic Scholar.</a></p>
+        <p><a href="https://www.softwareseni.co.id/blog/javascript-adalah" target="_blank">Software Seni. "JavaScript adalah: Fungsi dan Penggunaannya dalam Pengembangan Website."</a></p>
+        <p><a href="https://www.w3schools.com/" target="_blank">Tim W3Schools. "W3Schools Online Web Tutorials."</a></p>
+        <p><a href="https://lp2mp.uma.ac.id/bootstrap-pengertian-fungsi-kelebihan-dan-cara-menggunakannya/" target="_blank">Universitas Medan Area. "Bootstrap: Pengertian, Fungsi, Kelebihan, dan Cara Menggunakannya."</a></p>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (confirm('Apakah Anda ingin menyembunyikan konten dari bagian ini?')) {
+                content.classList.toggle('hidden');
+            }
+        }
+
+        function toggleMode() {
+            document.body.classList.toggle('messy-mode');
+        }
+
+       
+        function toggleBibliography() {
+            const bibliography = document.getElementById('bibliography');
+            if (bibliography.style.display === 'block') {
+                bibliography.style.display = 'none';
+            } else {
+                bibliography.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
